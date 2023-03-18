@@ -1,0 +1,15 @@
+version: '2'
+services:
+  dev:
+    image: "nodejs"
+    build:
+      context: "."
+      dockerfile: nodejs/Dockerfile
+      args:
+        # // Update 'VARIANT' to pick a Node version: 16, 14, 12.
+        # // Append -bullseye or -buster to pin to an OS version.
+        # // Use -bullseye variants on local arm64/Apple Silicon.
+        VARIANT: "16-bullseye"
+    volumes:
+      - ..:/home/node/ws:cached
+    tty: true

@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "yarn build",
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "build",
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "yarn install",
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "install",
+                "--immutable",
+                "--immutable-cache",
+                "--check-cache",
+            ],
+            "problemMatcher": [],
+        },
+        {
+            "label": "npm-check-updates",
+            "type": "shell",
+            "command": "yarn global add npm-check-updates && npm-check-updates -u",
+            "problemMatcher": [],
+        },
+        {
+            "label": "yarn build:pages",
+            "type": "shell",
+            "command": "yarn",
+            "args": [
+                "build:pages",
+            ],
+            "problemMatcher": [],
+        },
+    ]
+}
