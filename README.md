@@ -1,17 +1,15 @@
-# @weblueth/custom
+# @weblueth/statemachine
 
-@weblueth, custom template.
-
-[Live Demo (GitHub Pages)](https://jp-rad.github.io/weblueth-custom/)
+Web Bluetooth state machine.
 
 ## Installation:
 
 ```bash
-npm install @weblueth/custom --save-dev
+npm install @weblueth/statemachine --save-dev
 ```
 
 or
 
 ```bash
-yarn add --dev @weblueth/custom
+yarn add --dev @weblueth/statemachine
 ```
