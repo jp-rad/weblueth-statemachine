@@ -1,27 +1,19 @@
 {
-  "name": "@weblueth/custom",
-  "version": "0.0.0-alpha.1",
-  "description": "@weblueth, custom template.",
+  "name": "@weblueth/statemachine",
+  "version": "0.0.3",
+  "description": "@weblueth, state machine.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jp-rad/weblueth-custom.git"
-  },
-  "targets": {
-    "pages": {
-      "source": "pages/index.html",
-      "isLibrary": false
-    }
+    "url": "git+https://github.com/jp-rad/weblueth-statemachine.git"
   },
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "prepare": "npm run build",
-    "start:pages": "npx parcel --no-cache --target pages",
-    "build:pages": "npx parcel build --no-cache --no-source-maps --target pages"
+    "prepare": "npm run build"
   },
   "files": [
     "dist",
@@ -29,20 +21,18 @@
     "README.md"
   ],
   "keywords": [
-    "react",
     "typescript",
-    "web bluetooth"
+    "web bluetooth",
+    "state machine"
   ],
   "author": "jp-rad",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "process": "^0.11.10",
+    "@types/web-bluetooth": "^0.0.16",
     "tslib": "^2.5.0",
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "xstate": "^4.37.0"
   }
 }

@@ -34,14 +34,5 @@
             "command": "yarn global add npm-check-updates && npm-check-updates -u",
             "problemMatcher": [],
         },
-        {
-            "label": "yarn build:pages",
-            "type": "shell",
-            "command": "yarn",
-            "args": [
-                "build:pages",
-            ],
-            "problemMatcher": [],
-        },
     ]
 }
